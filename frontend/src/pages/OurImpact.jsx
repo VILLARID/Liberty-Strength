@@ -39,10 +39,10 @@ function OurImpact() {
     ];
 
     return (
-        <section id="about" className="relative w-full h-screen">
+        <section id="about" className="relative w-full min-h-screen pt-30">
 
             {/* Content */}
-            <div className="relative z-10 pt-30">
+            <div className="relative z-10">
 
                 <div className="flex flex-col gap-10 items-center text-white">
 

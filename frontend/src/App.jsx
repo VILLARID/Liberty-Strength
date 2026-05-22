@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import OurImpact from "./pages/OurImpact";
+import OurPrograms from "./pages/OurPrograms";
 
 function App() {
     return (
@@ -25,6 +26,7 @@ function App() {
                 {/* Pages */}
                 <div className="relative z-10">
                     <OurImpact />
+                    <OurPrograms />
                 </div>
 
             </div>
