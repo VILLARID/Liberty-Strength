@@ -16,72 +16,70 @@ function Navbar() {
     ];
 
     return (
-        <>
-            <nav className="fixed w-full bg-black py-5 px-5 z-10">
+        <nav className="fixed w-full bg-black py-5 px-5 z-50">
 
-                <div className="flex justify-between items-center">
+            {/* Top bar */}
+            <div className="flex justify-between items-center">
 
-                    {/* Logo */}
-                    <div className="flex items-center gap-5 text-white">
+                {/* Logo */}
+                <div className="flex items-center gap-5 text-white">
 
-                        <img
-                            src={logo}
-                            alt="Logo"
-                            className="size-15"
-                        />
+                    <img
+                        src={logo}
+                        alt="Logo"
+                        className="size-15"
+                    />
 
-                        <div className="flex flex-col">
+                    <div className="flex flex-col">
+                        <h2 className="text-xl font-semibold">
+                            Liberty Strength
+                        </h2>
 
-                            <h2 className="text-xl font-semibold">
-                                Liberty Strength
-                            </h2>
-
-                            <span className="text-gray-400 text-sm">
-                                TRANSFORM YOUR LIFE
-                            </span>
-
-                        </div>
-
+                        <span className="text-gray-400 text-sm">
+                            TRANSFORM YOUR LIFE
+                        </span>
                     </div>
-
-                    {/* Mobile Button */}
-                    <button
-                        className="md:hidden"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                    >
-                        {menuOpen ? (
-                            <X className="text-white" />
-                        ) : (
-                            <Menu className="text-white" />
-                        )}
-                    </button>
 
                 </div>
 
-                {/* Mobile Menu */}
-                {menuOpen && (
-                    <div className="flex flex-col gap-13 mt-13 text-white">
+                {/* Mobile Button */}
+                <button
+                    className="md:hidden"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                >
+                    {menuOpen ? (
+                        <X className="text-white" />
+                    ) : (
+                        <Menu className="text-white" />
+                    )}
+                </button>
 
-                        {links.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                onClick={() => setMenuOpen(false)}
-                            >
-                                {link.name}
-                            </a>
-                        ))}
+            </div>
 
-                        {/* Button */}
-                        <button className="w-full py-3 rounded-xl text-white text-lg font-semibold bg-linear-to-r from-[#2563eb] via-[#ff3ea5] to-[#ff2d2d] shadow-[0_0_25px_rgba(255,62,165,0.45)] hover:shadow-[0_0_35px_rgba(255,62,165,0.65)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300">
-                            Join Now
-                        </button>
+            {/* Mobile Menu */}
+            {menuOpen && (
+                <div className="absolute top-full left-0 w-full bg-black px-5 py-8 flex flex-col gap-6 text-white">
 
-                    </div>
-                )}
+                    {links.map((link) => (
+                        <a
+                            key={link.name}
+                            href={link.href}
+                            onClick={() => setMenuOpen(false)}
+                            className="text-lg"
+                        >
+                            {link.name}
+                        </a>
+                    ))}
 
-            </nav>
-        </>
+                    {/* CTA Button */}
+                    <button className="w-full py-3 rounded-xl text-white text-lg font-semibold bg-linear-to-r from-[#2563eb] via-[#ff3ea5] to-[#ff2d2d] shadow-[0_0_25px_rgba(255,62,165,0.45)] hover:shadow-[0_0_35px_rgba(255,62,165,0.65)] hover:scale-[1.03] active:scale-[0.97] transition-all duration-300">
+                        Join Now
+                    </button>
+
+                </div>
+            )}
+
+        </nav>
     );
 }
 
