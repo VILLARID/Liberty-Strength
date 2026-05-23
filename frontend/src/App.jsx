@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home";
 import OurImpact from "./pages/OurImpact";
 import OurPrograms from "./pages/OurPrograms";
+import Trainers from "./pages/Trainers";
 
 function App() {
     return (
@@ -27,6 +28,7 @@ function App() {
                 <div className="relative z-10">
                     <OurImpact />
                     <OurPrograms />
+                    <Trainers />
                 </div>
 
             </div>
