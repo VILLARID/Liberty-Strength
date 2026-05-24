@@ -42,17 +42,7 @@ function TrainersCards({
 
                         <div
                             key={index}
-                            className="
-                                px-4 
-                                py-2 
-                                rounded-xl 
-                                bg-white/4
-                                border 
-                                border-white/10
-                                text-gray-300
-                                text-sm
-                                backdrop-blur-sm
-                            "
+                            className="px-4 py-2 rounded-xl bg-white/4 border border-white/10 text-gray-300 text-sm backdrop-blur-sm"
                         >
                             {item}
                         </div>

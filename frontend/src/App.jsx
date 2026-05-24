@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import OurImpact from "./pages/OurImpact";
 import OurPrograms from "./pages/OurPrograms";
 import Trainers from "./pages/Trainers";
+import Membership from "./pages/Membership";
 
 function App() {
     return (
@@ -29,6 +30,7 @@ function App() {
                     <OurImpact />
                     <OurPrograms />
                     <Trainers />
+                    <Membership />
                 </div>
 
             </div>
