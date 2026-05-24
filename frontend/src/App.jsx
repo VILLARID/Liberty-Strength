@@ -4,6 +4,7 @@ import OurImpact from "./pages/OurImpact";
 import OurPrograms from "./pages/OurPrograms";
 import Trainers from "./pages/Trainers";
 import Membership from "./pages/Membership";
+import Testimonials from "./pages/Testimonials";
 
 function App() {
     return (
@@ -31,6 +32,7 @@ function App() {
                     <OurPrograms />
                     <Trainers />
                     <Membership />
+                    <Testimonials />
                 </div>
 
             </div>
